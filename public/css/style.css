@@ -124,7 +124,7 @@ top: 0;
 .fondon2 {
   margin: 0;
   padding: 0;
-  background-image: url('../Imagenes/redes/fondo.png'); /* Cambia 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen de fondo */
+  background-image: url('../Imagenes/varios\ dientes.jpg'); /* Cambia 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen de fondo */
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif;
@@ -170,7 +170,7 @@ top: 0;
   transform: scale(1.09);
 }
 button {
-  background-color: #b105b7; /* Color de fondo del botón */
+  background-color: #3a05b7; /* Color de fondo del botón */
   color: white; /* Color del texto del botón */
   padding: 10px 20px; /* Espacio dentro del botón */
   border: none;
@@ -189,14 +189,14 @@ button {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border: 2px solid #af4c96;
+  border: 2px solid #664caf;
   color: #0e0d0d;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-custom:hover {
-  background-color: #b82794;
+  background-color: #150311;
   color: white;
   transform: scale(1.09);
 }
@@ -222,14 +222,14 @@ form {
 }
 /* Definir el color violeta para los botones */
 .btn-violeta {
-  background-color: violet;
+  background-color: rgb(94, 66, 208);
   color: white; /* Color del texto */
 }
 
 /* Hover y focus styles (opcional) */
 .btn-violeta:hover,
 .btn-violeta:focus {
-  background-color: darkviolet;
+  background-color: rgb(16, 4, 21);
 }
 
 
@@ -253,7 +253,7 @@ label {
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  background-color: #4caf50;
+  background-color: #051306;
   color: white;
   padding: 10px 20px;
   margin: 8px 0;
@@ -265,7 +265,7 @@ input[type="button"] {
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-  background-color: #45a049;
+  background-color: #010401;
 }
 
 /* Estilos para los textareas */
@@ -333,18 +333,18 @@ header {
   flex-direction: row;
 }
 header:hover {
-  color: #e186f8;
+  color: #9f86f8;
   font-weight: bold;
 }
 header a {
-  color: #3a0237;
+  color: #1b023a;
   font-family: "Tenor Sans", sans-serif;
 }
 header h1 {
   font-family: "Tenor Sans", sans-serif;
   text-align: center;
-  color: #580354;
-  border: rgba(88, 3, 84, 0.295) 12px;
+  color: #140358;
+  border: rgba(31, 3, 88, 0.295) 12px;
   padding: 13px 45px;
   margin: 5px 5px 5px 5px;
   background-color: rgba(225, 134, 248, 0);
@@ -361,8 +361,8 @@ header h1 {
 header h2 {
   font-family: "Tenor Sans", sans-serif;
   color: #3e0077;
-  border: #3a0237 4px solid;
-  background-color: rgba(225, 134, 248, 0.507);
+  border: #17023a 4px solid;
+  background-color: rgba(153, 134, 248, 0.507);
   margin-bottom: 35px;
   margin-top: 25px;
   margin-right: 8px;
@@ -377,7 +377,7 @@ header h2 {
 }
 header h3 {
   font-family: "Tenor Sans", sans-serif;
-  background-color: rgba(250, 71, 241, 0.329);
+  background-color: rgba(104, 71, 250, 0.329);
   border: 12px;
   margin-left: 12px;
   width: 100%;
@@ -403,7 +403,7 @@ header h5 {
   position: sticky;
   z-index: 3;
   border: 2px solid;
-  border-color: #3a0237;
+  border-color: #06023a;
   background-color: rgba(128, 128, 128, 0.397);
   font-family: "Montserrat", sans-serif;
   font-weight: 1000;
@@ -430,17 +430,13 @@ section img:hover {
   filter: contrast(120%);
 }
 
-footer:hover {
-  color: #e186f8;
-  font-weight: bold;
-}
 
 footer .negrita {
   font-weight: 700;
 }
 
 footer .footer {
-  color: #530253;
+  color: #0d0253;
   text-align: center;
   background-color: #d4d4d4;
   font-size: 18px;
@@ -449,7 +445,7 @@ footer .footer {
 }
 
 footer .h5 .negritaV {
-  color: purple;
+  color: rgb(43, 0, 128);
 }
 
 footer .negrita {
@@ -463,15 +459,15 @@ p {
 
 a {
   text-decoration: none;
-  color: #3a0237;
+  color: #0c023a;
 }
 
 main {
-  background-color: rgba(161, 108, 172, 0.507);
+  background-color: rgba(113, 108, 172, 0.507);
 }
 
 footer {
-  color: #530253;
+  color: #110253;
   text-align: center;
   background-color: #d4d4d4;
   font-size: 18px;
@@ -481,11 +477,11 @@ footer {
 
 h1 {
   text-align: center;
-  color: #580354;
-  border: rgba(88, 3, 84, 0.295) 12px;
+  color: #150358;
+  border: rgba(20, 3, 88, 0.295) 12px;
   padding: 13px 45px;
   margin: 5px 5px 5px 5px;
-  background-color: rgba(225, 134, 248, 0.548);
+  background-color: rgba(172, 134, 248, 0.548);
   margin-bottom: 5px;
   margin-top: 25px;
   margin-right: 8px;
@@ -500,7 +496,7 @@ h1 {
 
 h2 {
   color: #3e0077;
-  border: #3a0237 4px solid;
+  border: #16023a 4px solid;
   background-color: rgba(225, 134, 248, 0.507);
   margin-bottom: 35px;
   margin-top: 25px;
@@ -516,7 +512,7 @@ h2 {
 }
 
 h3 {
-  background-color: rgba(250, 71, 241, 0.329);
+  background-color: rgba(116, 71, 250, 0.329);
   border: 12px;
   margin-left: 12px;
   width: 100%;
@@ -544,7 +540,7 @@ h3 {
 
 }
 .social-icon a:hover{
-  background: pink;
+  background: rgb(192, 222, 255);
 }
 .social-icon a:hover i{
   transition: 0.5s;
@@ -558,7 +554,7 @@ h3 {
   color: #3e0077;
 }
 .fon {
-  background-color: violet;
+  background-color: rgb(164, 130, 238);
 }
 .fon:hover {
   background-color: rgb(151, 151, 151);
@@ -569,8 +565,7 @@ h3 {
   background-image: url(https://static.vecteezy.com/system/resources/previews/001/946/579/large_2x/abstract-pink-design-geometric-diagonal-background-decor-golden-lines-with-copy-space-for-text-luxury-style-free-vector.jpg);
 }
 #primeraParte {
-  background-image: url('../Imagenes/personal/WhatsApp\ Image\ 2024-03-07\ at\ 15.50.30.jpeg');
-  /*background-image: url(https://i.pinimg.com/originals/77/56/f3/7756f3bcd7659f955f8bf1027a96b21a.jpg);*/
+  background-image: url('../Imagenes/neurona2.jfif');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -579,7 +574,7 @@ h3 {
 
 
 .parrafoRgb {
-  color: #510358;
+  color: #1b0358;
   background-color: #a5a4a4;
   padding: 12px;
   display: inline-block;
@@ -608,7 +603,7 @@ h3 {
 }
 
 .negritaV {
-  color: purple;
+  color: rgb(23, 0, 128);
 }
 
 .italica {
@@ -629,7 +624,7 @@ header {
 
 .header a:hover,
 footer a:hover {
-  color: #e186f8;
+  color: #8f86f8;
   font-weight: bold;
 }
 
@@ -637,7 +632,7 @@ b {
   font-size: 32px;
   width: justify;
   text-align: center;
-  border: #3a0237 5px solid;
+  border: #15023a 5px solid;
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 3px;
@@ -669,7 +664,7 @@ section {
 }
 
 main {
-  background-color: rgba(161, 108, 172, 0.507);
+  background-color: rgba(117, 108, 172, 0.507);
 }
 
 /* menu desplegable */
@@ -703,7 +698,7 @@ ul li:hover ul {
   position: sticky;
   z-index: 3;
   border: 2px solid;
-  border-color: #3a0237;
+  border-color: #15023a;
   background-color: rgba(128, 128, 128, 0.397);
   font-family: "Montserrat", sans-serif;
   font-weight: 1000;
@@ -726,11 +721,11 @@ a .barra {
 
 a .h1 {
   text-align: center;
-  color: #580354;
-  border: rgba(88, 3, 84, 0.295) 12px;
+  color: #150358;
+  border: rgba(30, 3, 88, 0.295) 12px;
   padding: 13px 45px;
   margin: 5px 5px 5px 5px;
-  background-color: rgba(225, 134, 248, 0.548);
+  background-color: rgba(161, 134, 248, 0.548);
   margin-bottom: 5px;
   margin-top: 25px;
   margin-right: 8px;
@@ -755,7 +750,7 @@ div div div div h5 .negritaN {
 div section #primeraParte {
   background-image: url(https://pm1.narvii.com/6989/08eadd1…r1-720-1280v2_hq.jpg);
   background-color: #a5a4a4;
-  border: #5a015a 4px solid;
+  border: #1a015a 4px solid;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -778,7 +773,7 @@ div section article div p .p {
 
 div section article div p .a {
   text-decoration: none;
-  color: #3a0237;
+  color: #14023a;
 }
 
 div section article div p u a .p {
@@ -801,7 +796,7 @@ div section section div .aei {
 }
 
 div section section div div h5 .negritaV {
-  color: purple;
+  color: rgb(30, 0, 128);
 }
 
 div section section div div h5 .banner {
@@ -845,11 +840,11 @@ p {
 
 h1 {
   text-align: center;
-  color: #580354;
-  border: rgba(88, 3, 84, 0.295) 12px;
+  color: #130358;
+  border: rgba(16, 3, 88, 0.295) 12px;
   padding: 13px 45px;
   margin: 5px 5px 5px 5px;
-  background-color: rgba(225, 134, 248, 0.548);
+  background-color: rgba(172, 134, 248, 0.548);
   margin-bottom: 5px;
   margin-top: 25px;
   margin-right: 8px;
@@ -939,7 +934,7 @@ h1 {
   height: 45px;
   margin: 15 10 15 10;
   padding: 15 10 15 10;
-  color: blueviolet;
+  color: rgb(76, 43, 226);
   position: relative;
   border: 15 20 15 20;
   text-align: center;
@@ -972,9 +967,9 @@ div div .wapp {
 }
 
 .tablap {
-  border: #3a0237 2px;
-  margin: #3a0237 2px;
-  padding: #3a0237 2px;
+  border: #0c023a 2px;
+  margin: #05023a 2px;
+  padding: #0e023a 2px;
   text-align: center;
   font-size: center;
   display: inline-block;
@@ -991,7 +986,7 @@ b {
   font-size: 32px;
   width: justify;
   text-align: center;
-  border: #3a0237 5px solid;
+  border: #0d023a 5px solid;
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 3px;
@@ -1000,7 +995,7 @@ b {
 }
 
 header a:hover {
-  color: #e186f8;
+  color: #9586f8;
   font-weight: bold;
 }
 
@@ -1015,7 +1010,7 @@ header .header {
 
 header .header a:hover,
 header footer a:hover {
-  color: #e186f8;
+  color: #8f86f8;
   font-weight: bold;
 }
 
@@ -1024,7 +1019,7 @@ body div .barranav {
   position: sticky;
   z-index: 3;
   border: 2px solid;
-  border-color: #3a0237;
+  border-color: #0d023a;
   background-color: rgba(128, 128, 128, 0.397);
   font-family: "Montserrat", sans-serif;
   font-weight: 1000;
@@ -1033,7 +1028,7 @@ body div .barranav {
 
 body div .a {
   text-decoration: none;
-  color: #3a0237;
+  color: #05023a;
 }
 
 body div .nos {
@@ -1058,7 +1053,7 @@ body p {
   position: sticky;
   z-index: 3;
   border: 2px solid;
-  border-color: #3a0237;
+  border-color: #02083a;
   background-color: rgba(128, 128, 128, 0.397);
   font-family: "Tenor Sans", sans-serif;
   font-weight: 1000;
@@ -1067,7 +1062,7 @@ body p {
 
 .strong .a {
   text-decoration: none;
-  color: #3a0237;
+  color: #08023a;
 }
 
 .strong p .nos {
@@ -1078,7 +1073,7 @@ body p {
 
 .strong p .a {
   text-decoration: none;
-  color: #3a0237;
+  color: #0c023a;
 }
 
 div .fondoDos {
