@@ -6,8 +6,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-.transparente { background-color: rgba(255, 255, 255, 0.5);
-
+.transparente {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .logo img {
   max-width: 100px; /* Establece un tamaño máximo para el logo */
@@ -16,14 +16,17 @@
 }
 .contenedores {
   display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Divide el contenedor en cinco columnas de igual ancho */
-    gap: 20px; 
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Divide el contenedor en cinco columnas de igual ancho */
+  gap: 20px;
 }
 .contfoto {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
   overflow: hidden;
-  grid-column: span 1; 
+  grid-column: span 1;
   margin: 20px 0;
 }
 .contfoto img {
@@ -54,7 +57,7 @@
 .conte {
   grid-column: span 4;
 }
-.conte h4{
+.conte h4 {
   text-align: center;
   font-size: 25px;
   border-bottom: 1px solid #808080;
@@ -67,10 +70,10 @@
 }
 
 .contfoto:hover .conte {
-top: 0;
+  top: 0;
 }
 
-.fondoB{
+.fondoB {
   background: rgba(255, 255, 255, 0.5);
 }
 .alMedio {
@@ -80,11 +83,10 @@ top: 0;
 }
 .fotoMedio {
   display: flex;
-    justify-content: center; /* Centra horizontalmente la imagen */
-    align-items: center;
-    position: relative; /* Ajusta la posición relativa para que la imagen se ajuste al tamaño del contenedor */
-    overflow: hidden;
-
+  justify-content: center; /* Centra horizontalmente la imagen */
+  align-items: center;
+  position: relative; /* Ajusta la posición relativa para que la imagen se ajuste al tamaño del contenedor */
+  overflow: hidden;
 }
 .fotoMedio img {
   max-width: 100%; /* Ajusta el ancho máximo de la imagen */
@@ -98,16 +100,13 @@ top: 0;
   font-size: 15px;
   border-bottom: 1px solid #808080;
   padding: 0 10px 20px 10px;
-  
 }
 
 .margen {
   padding: 80px; /* Espacio alrededor de la foto */
-
 }
 .margen2 {
-  background-image: url('../Imagenes/frente\ foto\ local.jpg');
-  
+  background-image: url("../Imagenes/frente\ foto\ local.jpg");
 }
 .fondoBlanco {
   background-color: white;
@@ -116,7 +115,7 @@ top: 0;
 .fondon {
   margin: 0;
   padding: 0;
-  background-image: url('../Imagenes/redes/fondiDiente.jpg'); /* Cambia 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen de fondo */
+  background-image: url("../Imagenes/redes/fondiDiente.jpg"); /* Cambia 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen de fondo */
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif;
@@ -124,7 +123,7 @@ top: 0;
 .fondon2 {
   margin: 0;
   padding: 0;
-  background-image: url('../Imagenes/varios\ dientes.jpg'); /* Cambia 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen de fondo */
+  background-image: url("../Imagenes/varios\ dientes.jpg"); /* Cambia 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen de fondo */
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif;
@@ -138,7 +137,12 @@ top: 0;
 }
 
 .cuadroIn {
-  background-color: rgba(255, 255, 255, 0.7); /* Color blanco con una opacidad del 70% */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Color blanco con una opacidad del 70% */
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -161,12 +165,12 @@ top: 0;
   margin: 10px; /* Espacio entre los iconos */
 }
 .icons img:hover {
-    transform: scale(1.09);
-}
-.transform img:hover{
   transform: scale(1.09);
 }
-.transform a:hover{
+.transform img:hover {
+  transform: scale(1.09);
+}
+.transform a:hover {
   transform: scale(1.09);
 }
 button {
@@ -201,8 +205,6 @@ button {
   transform: scale(1.09);
 }
 
-
-
 /* Agrega estos estilos al final de tu archivo style.css */
 
 /* Estilos para el formulario */
@@ -216,7 +218,7 @@ form {
 }
 /* Estilo para el fondo del formulario */
 .form-background {
-  background-image: url('../Imagenes/redes/dientesEs.jpg');
+  background-image: url("../Imagenes/redes/dientesEs.jpg");
   padding: 20px; /* Ajusta el padding según sea necesario */
   border-radius: 10px; /* Ajusta el radio de borde según sea necesario */
 }
@@ -231,8 +233,6 @@ form {
 .btn-violeta:focus {
   background-color: rgb(16, 4, 21);
 }
-
-
 
 /* Estilos para los inputs */
 .wit {
@@ -278,15 +278,6 @@ input[type="button"]:hover {
   border-radius: 4px;
 }
 
-
-
-
-
-
-
-
-
-
 .wapp {
   background-color: green;
   color: whitesmoke;
@@ -308,11 +299,9 @@ input[type="button"]:hover {
 }
 /**/
 
-
-
 .slider::before {
   position: absolute;
-  content: '';
+  content: "";
   height: 26px;
   width: 26px;
   left: 4px;
@@ -321,7 +310,6 @@ input[type="button"]:hover {
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-
 }
 
 header {
@@ -430,7 +418,6 @@ section img:hover {
   filter: contrast(120%);
 }
 
-
 footer .negrita {
   font-weight: 700;
 }
@@ -535,14 +522,13 @@ h3 {
   border-radius: 50%;
   transition: 0.5s;
 }
-.social-icon a .fab{
+.social-icon a .fab {
   line-height: 36px;
-
 }
-.social-icon a:hover{
+.social-icon a:hover {
   background: rgb(192, 222, 255);
 }
-.social-icon a:hover i{
+.social-icon a:hover i {
   transition: 0.5s;
   color: rgb(40, 40, 40);
 }
@@ -565,13 +551,11 @@ h3 {
   background-image: url(https://static.vecteezy.com/system/resources/previews/001/946/579/large_2x/abstract-pink-design-geometric-diagonal-background-decor-golden-lines-with-copy-space-for-text-luxury-style-free-vector.jpg);
 }
 #primeraParte {
-  background-image: url('../Imagenes/neurona2.jfif');
+  background-image: url("../Imagenes/neurona2.jfif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
-
-
 
 .parrafoRgb {
   color: #1b0358;
@@ -1089,8 +1073,8 @@ div .italica {
 }
 
 /* medias querys */
-@media (min-width: 410px){
-  .contenedores{
+@media (min-width: 410px) {
+  .contenedores {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -1113,7 +1097,7 @@ div .italica {
   .p2 {
     font-size: 11px;
   }
-  .contenedores{
+  .contenedores {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -1159,7 +1143,7 @@ div .italica {
   .banner {
     font-size: 46px;
   }
-  .contenedores{
+  .contenedores {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -1183,7 +1167,6 @@ div .italica {
   .img {
     width: 345px;
   }
-
 }
 
 @media (min-width: 800px) {
@@ -1193,13 +1176,12 @@ div .italica {
   .banner {
     font-size: 65px;
   }
-  .contenedores{
+  .contenedores {
     grid-template-columns: repeat(3, 1fr);
-    
   }
 }
 @media (min-width: 1080px) {
-  .contenedores{
+  .contenedores {
     grid-template-columns: repeat(4, 1fr);
   }
 }
