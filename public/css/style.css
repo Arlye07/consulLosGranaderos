@@ -123,7 +123,7 @@
 .fondon2 {
   margin: 0;
   padding: 0;
-  background-image: url("../Imagenes/varios\ dientes.jpg"); /* Cambia 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen de fondo */
+  background-image: url("../Imagenes/ia/incrustacion4.jpg"); /* Cambia 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen de fondo */
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif;
@@ -551,7 +551,7 @@ h3 {
   background-image: url(https://static.vecteezy.com/system/resources/previews/001/946/579/large_2x/abstract-pink-design-geometric-diagonal-background-decor-golden-lines-with-copy-space-for-text-luxury-style-free-vector.jpg);
 }
 #primeraParte {
-  background-image: url("../Imagenes/neurona2.jfif");
+  background-image: url("../Imagenes/ia/neuro1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -1182,6 +1182,6 @@ div .italica {
 }
 @media (min-width: 1080px) {
   .contenedores {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
