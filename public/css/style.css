@@ -6,6 +6,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Fonts */
+h4.negrita {
+  font-weight: 700;
+  font-size: 2em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+h4.negritaV {
+  font-weight: 500;
+  font-size: 1.8em;
+  color: #007BFF; /* Puedes cambiar a otro color si prefieres */
+  margin-bottom: 20px;
+}
+.conte {
+  padding: 20px;
+}
+
+.conte h4 {
+  font-weight: 600;
+  color: #f6f5f5;
+  margin-bottom: 10px;
+}
+
+.conte p {
+  font-size: 1em;
+  line-height: 1.4em;
+  color: #f8f5f5;
+}
 .transparente {
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -37,6 +67,7 @@
   border-radius: 12px;
   display: block;
   overflow: hidden;
+  border-bottom: 4px solid #007BFF;
 }
 
 .contfoto:hover img {
@@ -56,6 +87,7 @@
 }
 .conte {
   grid-column: span 4;
+  padding: 20px;
 }
 .conte h4 {
   text-align: center;
@@ -555,8 +587,14 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  text-align: center;
 }
-
+h4.negritaV {
+  font-weight: 500;
+  font-size: 1.8em;
+  color: #007BFF; /* Puedes cambiar a otro color si prefieres */
+  margin-bottom: 20px;
+}
 .parrafoRgb {
   color: #1b0358;
   background-color: #a5a4a4;
@@ -1071,6 +1109,81 @@ div .negrita {
 div .italica {
   font-style: italic;
 }
+
+#chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+#chat-btn img {
+  width: 60px; /* Tamaño de la imagen del botón */
+  height: auto;
+  border-radius: 50%; /* Esto hace que la imagen sea redonda */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#chat-box {
+  position: fixed;
+  bottom: 80px; /* Justo encima del botón de chat */
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: none; /* Por defecto, oculto */
+  z-index: 1000;
+  overflow: hidden;
+}
+
+
+.chat-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.chat-body {
+  padding: 10px;
+  overflow-y: auto;
+  height: 300px;
+  background-color: #f8f9fa;
+}
+
+.chat-footer {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ccc;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+}
+
+.chat-message.user {
+  text-align: right;
+  color: #007bff;
+}
+
+.chat-message.bot {
+  text-align: left;
+  color: #333;
+}
+
+
+
+
+
 
 /* medias querys */
 @media (min-width: 410px) {
