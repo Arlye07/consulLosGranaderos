@@ -453,6 +453,13 @@ ul li:hover ul {
   .img {
     width: 345px;
   }
+  /* Centramos el botón de menú cuando la pantalla es pequeña */
+  .navbar-toggler {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
 }
 @media (min-width: 800px) {
   .grid-container {

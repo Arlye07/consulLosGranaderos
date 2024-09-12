@@ -212,10 +212,9 @@ button {
   border: none;
   border-radius: 5px;
   margin-top: 20px; /* Espacio entre el párrafo y el botón */
+  margin-right: 33px;
 }
-.grandeLe h4 {
-  font-size: 40px;
-}
+
 
 /* Agrega estos estilos al final de tu archivo style.css */
 .btn-custom {
@@ -1280,6 +1279,13 @@ div .italica {
   .img {
     width: 345px;
   }
+  /* Centramos el botón de menú cuando la pantalla es pequeña */
+  .navbar-toggler {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
 }
 
 @media (min-width: 800px) {
