@@ -246,23 +246,34 @@
 
 <!-- Botón para abrir el chat con ícono de robot -->
 <button id="chat-btn">
-    <i class="fas fa-robot"></i>
+    <i class="fa-solid fa-tooth"></i>
 </button>
 
 <!-- Contenedor del chat -->
 <div id="chat-box" class="chat-box">
     <div class="chat-header">
         <h4>Asistente de Ayuda</h4>
-        <button id="close-chat">&times;</button>
+        <button id="close-chat" class="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
     </div>
     <div class="chat-body">
         <div id="chat-messages" class="chat-messages"></div>
+
+        <!-- Botones de preguntas frecuentes -->
+        <div id="faq-buttons" class="faq-buttons">
+            <button class="faq-btn" data-question="¿cuánto cuesta?">¿Cuánto cuesta?</button>
+            <button class="faq-btn" data-question="¿dónde está ubicado?">¿Dónde está ubicado?</button>
+            <button class="faq-btn" data-question="¿cómo puedo sacar un turno?">¿Cómo puedo sacar un turno?</button>
+        </div>
     </div>
     <div class="chat-footer">
         <input type="text" id="user-input" placeholder="Escribe tu pregunta...">
         <button id="send-message">Enviar</button>
     </div>
 </div>
+
+
 
     </div>
 
@@ -281,20 +292,28 @@
                 <a href="./paginas/contacto.html" class="btn-custom">Contacto</a> <br> <br>
                 <h5 class="card-title">2024 ©A.V. Consultorio Los Granaderos</h5>
                 <p class="card-text">Clinica Odontologica Y Neurologia, Alto Verde Cordoba Capital <br>
-                    Bv.Los Granaderos 3345, X5009 Cordoba Capidal</p>
-                <ul>
-                    <li class="transform"><a href="https://www.instagram.com/od.arielvillagra/" target="_blank"><img
-                                src="./Imagenes/redes/logo insta.jpg" alt="instagram ariel"></a></li>
-                    <li class="transform"><a href="https://www.instagram.com/od.anahivillagra/" target="_blank"><img
-                                src="./Imagenes/redes/logo insta.jpg" alt="instagram anahi"></a></li>
-                                <i class="fa-brands fa-square-instagram"></i>
-                                <i class="fa-brands fa-square-instagram"></i>
+                    Bv. Los Granaderos 3345, X5009 Cordoba Capital</p>
+                <ul style="list-style: none; padding: 0;">
+                    <!-- Ícono de Instagram para Ariel -->
+                    <li class="transform">
+                        <a href="https://www.instagram.com/od.arielvillagra/" target="_blank" class="btn btn-outline-dark" style="font-size: 24px;">
+                            <i class="fa-brands fa-instagram"></i> Ariel
+                        </a>
+                    </li>
+                    <!-- Ícono de Instagram para Anahi -->
+                    <li class="transform">
+                        <a href="https://www.instagram.com/od.anahivillagra/" target="_blank" class="btn btn-outline-dark" style="font-size: 24px;">
+                            <i class="fa-brands fa-instagram"></i> Anahi
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="card-footer text-muted">
             </div>
         </div>
     </footer>
+    
+    
 
 
     <script>
@@ -376,8 +395,30 @@
                 mapaUbicacion.style.display = 'block'; // Mostrar el mapa
             }
     
+            // Últimos arreglos del asistente para abrir y cerrar el chat
+            document.getElementById("chat-btn").addEventListener("click", function() {
+                document.getElementById("chat-box").classList.add("active");
+            });
+    
+            document.getElementById("close-chat").addEventListener("click", function() {
+                document.getElementById("chat-box").classList.remove("active");
+            });
+    
+            // Preguntas frecuentes - botones fijos
+            const faqButtons = document.querySelectorAll('.faq-btn');
+            
+            // Añadir evento a cada botón de pregunta frecuente
+            faqButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    const question = this.getAttribute('data-question');
+                    addMessage('user', question);  // Mostrar la pregunta en el chat
+                    handleUserMessage(question);   // Enviar la pregunta al manejador de mensajes
+                });
+            });
+    
         });
     </script>
+    
     
     
 
