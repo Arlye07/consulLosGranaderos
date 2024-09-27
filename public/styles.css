@@ -371,73 +371,130 @@ ul li:hover ul {
   font-weight: bold;
 }
 /* Estilo para el botón de cierre del chat */
-.close-btn {
-  background-color: transparent;
+/* Estilos para el botón de abrir el chat */
+#chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff; /* Color de fondo */
+  color: white; /* Color del ícono */
   border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
   font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #333; /* Cambia el color según tu tema */
-  transition: color 0.3s;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Para que esté encima del resto de elementos */
 }
 
-.close-btn:hover {
-  color: #ff0000; /* Cambia el color al pasar el ratón */
+#chat-btn:hover {
+  background-color: #0056b3; /* Cambia el color al pasar el mouse */
 }
 
 /* Estilos para el contenedor del chat */
 #chat-box {
-  width: 300px;
-  height: 400px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
   position: fixed;
-  bottom: 20px;
+  bottom: 90px;
   right: 20px;
-  display: none;
+  width: 350px;
+  max-height: 500px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  display: none; /* Oculto por defecto */
   flex-direction: column;
-  background-color: #fff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
-#chat-box.active {
-  display: flex;
-}
-
-/* Estilos para la cabecera del chat */
 .chat-header {
   background-color: #007bff;
   color: white;
   padding: 10px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.chat-header h4 {
+  margin: 0;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.chat-body {
+  padding: 10px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.chat-messages {
+  margin-bottom: 10px;
+}
 
 .faq-buttons {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .faq-btn {
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
-  text-align: center;
+  font-size: 14px;
 }
 
 .faq-btn:hover {
   background-color: #0056b3;
 }
+
+.chat-footer {
+  display: flex;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#user-input {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#send-message {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#send-message:hover {
+  background-color: #0056b3;
+}
+
+
+/* Estilos para la cabecera del chat */
+
 
 
 /*
